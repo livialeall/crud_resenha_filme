@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --background: rgb(25, 25, 33);
+    --background-sec:rgb(54, 54, 64);
+    --background-ter:rgb(38, 38, 47);
+    --letra: rgb(146, 146, 155) ;
+    --adicionar: green;
+    --visualizar: orange;
+    --deletar: red;
+    --editar: yellow;
+    --box-shadow :1px 1px rgba(0, 0, 0, 0.284);
+}
+body {
+    margin: 15px 25px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background);
+    color: var(--letra) ;
+}
+
+label {
+    margin: 10px 5px;
+}
+
+form {
+    background-color: var(--background-sec);
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: var(--box-shadow);
+}
+input {
+    margin-left: 25px;
+    background-color:var(--background);
+    border: 1px solid var(--letra);
+    padding: 6px;
+    color:var(--letra);
+    border-radius: 5px;
+}
+.container-grid{
+    background-color: var(--background-ter);
+    padding: 5px;
+    border-radius: 5px;
+}
+.display-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 2em;
+}
+
+
+.display-flex-row-header{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0px 2em;
+}
+
+button {
+    margin: 12.5px 10px 12.5px 0px;
+    padding: 5px 12.5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.284);
+}
+
+.Adicionar{
+    background-color: var(--adicionar);
+}
+
+.Visualizar{
+    background-color: var(--visualizar);
+}
+
+
+.Deletar {
+    background-color: var(--deletar);
+}
+
+.Editar {
+    background-color: var(--editar);
+}
+
+
+.grid {
+    display: grid;
+    gap:10px;
+    text-align: center;
+}
+
+
+.header {
+    font-weight: bold;
+    display: grid;
+    font-size: large;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+
+}
+
+.row {
+    display: contents;
+    font-size: medium;
+}
+
+.actions {
+    display: flex;
+    gap:15px;
+    justify-content: center;
+}
+
+
+.cell {
+    background-color: var(--background-sec);
+    border-radius: 5px;
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-flex-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
