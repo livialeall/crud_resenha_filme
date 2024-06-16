@@ -4,11 +4,10 @@ import axios from 'axios';
 import Button from "./Button";
 
 
-function Grid(){
+
+function Grid({openModal}){
 
     const [reviews,sediveview] = useState([]);
-
-    
     const fetchReviews = async () => {
         try {
             const response = await axios.get("/review-teste.json");
@@ -41,11 +40,11 @@ function Grid(){
                             <div className="cell">{r.nota}</div>
                             <div className="actions">
                                 <Button nome={"Deletar"}></Button>
-                                <Button nome={"Editar"}></Button>
+                                <Button nome={"Editar"} onClick={openModal}></Button>
                             </div>
                         </div>
                     ))
-                ): <div></div>}
+                ): <div>Nenhuma review foi feita.</div>}
 
                 </div>
                 

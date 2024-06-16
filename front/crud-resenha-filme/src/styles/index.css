@@ -11,6 +11,7 @@
     --editar: yellow;
     --box-shadow :1px 1px rgba(0, 0, 0, 0.284);
 }
+
 body {
     margin: 15px 25px;
     font-family: "Roboto", sans-serif;
@@ -18,75 +19,12 @@ body {
     color: var(--letra) ;
 }
 
-label {
-    margin: 10px 5px;
-}
-
-form {
-    background-color: var(--background-sec);
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: var(--box-shadow);
-}
-input {
-    margin-left: 25px;
-    background-color:var(--background);
-    border: 1px solid var(--letra);
-    padding: 6px;
-    color:var(--letra);
-    border-radius: 5px;
-}
+/* Grid de visualização */
 .container-grid{
     background-color: var(--background-ter);
     padding: 5px;
     border-radius: 5px;
 }
-.display-flex{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.display-flex-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 2em;
-}
-
-
-.display-flex-row-header{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin: 0px 2em;
-}
-
-button {
-    margin: 12.5px 10px 12.5px 0px;
-    padding: 5px 12.5px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.284);
-}
-
-.Adicionar{
-    background-color: var(--adicionar);
-}
-
-.Visualizar{
-    background-color: var(--visualizar);
-}
-
-
-.Deletar {
-    background-color: var(--deletar);
-}
-
-.Editar {
-    background-color: var(--editar);
-}
-
 
 .grid {
     display: grid;
@@ -124,8 +62,82 @@ button {
     justify-content: center;
 }
 
-.display-flex-space-around{
+
+.display-flex-row{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 2em;
+}
+
+
+/* Formulario de edição/adicionar */
+
+label {
+    margin: 10px 15px;
+}
+
+.modal {
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    top: 25%;
+    
+}
+
+form {
+    background-color: var(--background-sec);
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: var(--box-shadow);
+}
+
+input {
+    
+    background-color:var(--background);
+    border: 1px solid var(--letra);
+    padding: 6px;
+    color:var(--letra);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form input {
+    margin-left: 15px;
+}
+
+
+.display-flex-form-modal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Botoes */
+button {
+    margin: 12.5px 10px 12.5px 0px;
+    padding: 5px 12.5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.284);
+    align-self: center;
+}
+
+.Adicionar, .Salvar{
+    background-color: var(--adicionar);
+}
+
+.Visualizar{
+    background-color: var(--visualizar);
+}
+
+
+.Deletar {
+    background-color: var(--deletar);
+}
+
+.Editar {
+    background-color: var(--editar);
 }
 
