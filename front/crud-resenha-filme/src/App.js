@@ -6,11 +6,6 @@ function App() {
   return (
     <div >
       <h1>CRUD - Resenha de filmes</h1>
-      <ul>
-        <li>
-          Fazer os botoes funcionarem
-        </li>
-      </ul>
       <Form></Form>
       <Grid></Grid>
     </div>
